@@ -35,7 +35,7 @@ Notebook 按顺序包含以下主要部分：
    - 文本清洗（去除 HTML、标点，小写化）
    - TF-IDF 向量化（n-gram 1-2，最大特征 50000）
    - 逻辑回归（saga 求解器）与 5 折交叉验证
-   - 生成二值预测提交文件
+   - 生成预测提交文件
 
 3. **BERT 微调**
    - 最小化文本清洗（仅去除 HTML 标签，保留标点和大写）
@@ -103,7 +103,7 @@ pip install pandas numpy scikit-learn matplotlib seaborn torch transformers tqdm
 
 ## 📊 结果
 
-- **TF-IDF + Logistic Regression**：交叉验证 AUC 约 0.88~0.90
+- **TF-IDF + Logistic Regression**：交叉验证 AUC 约 0.95
 - **BERT 微调**：验证 AUC 可达 0.97 以上（公开测试集 AUC 通常也在 0.95+）
 
 ## ❗ 常见问题
